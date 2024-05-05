@@ -4,7 +4,10 @@
 import logging
 
 
-def login_error_handler():
+def register_error_handler():
+    """
+    manejador de errores al momento de registrarnos
+    """
     print("#" * 120 + "\n")
     print("Error al logearse : ")
     logging.error(
