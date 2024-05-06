@@ -1,0 +1,249 @@
+2024-05-04 23:01:59,519 - INFO - ====== WebDriver manager ======
+2024-05-04 23:02:01,145 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:02:01,145 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:02:01,587 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:02:01,598 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:02:01,601 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:02:02,012 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:02:02,019 - INFO - Driver [C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-05-04 23:02:02,020 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-04 23:02:02,029 - DEBUG - Started executable: `C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe` in a child process with pid: 11384 using 0 to output -3
+2024-05-04 23:02:02,539 - DEBUG - POST http://localhost:54956/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-05-04 23:02:02,539 - DEBUG - Starting new HTTP connection (1): localhost:54956
+2024-05-04 23:02:03,395 - DEBUG - http://localhost:54956 "POST /session HTTP/1.1" 200 0
+2024-05-04 23:02:03,396 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"124.0.6367.119","chrome":{"chromedriverVersion":"124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})","userDataDir":"C:\\Users\\juanv\\AppData\\Local\\Temp\\scoped_dir11384_857202288"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:54959"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"3c600a504905df23835c6914318e2f9d"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:03,396 - DEBUG - Finished Request
+2024-05-04 23:02:03,396 - DEBUG - POST http://localhost:54956/session/3c600a504905df23835c6914318e2f9d/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:02:08,673 - DEBUG - http://localhost:54956 "POST /session/3c600a504905df23835c6914318e2f9d/url HTTP/1.1" 200 0
+2024-05-04 23:02:08,674 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:08,674 - DEBUG - Finished Request
+2024-05-04 23:02:08,674 - DEBUG - POST http://localhost:54956/session/3c600a504905df23835c6914318e2f9d/elements {'using': 'xpath', 'value': '//h3[contains(@class, "product-name")]'}
+2024-05-04 23:02:08,700 - DEBUG - http://localhost:54956 "POST /session/3c600a504905df23835c6914318e2f9d/elements HTTP/1.1" 200 0
+2024-05-04 23:02:08,700 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.121F551E5E7AA22A386EDE3D729941D1.d.E43DF40EDAF6F28A30F611A26489AB5F.e.80"},{"element-6066-11e4-a52e-4f735466cecf":"f.121F551E5E7AA22A386EDE3D729941D1.d.E43DF40EDAF6F28A30F611A26489AB5F.e.81"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:08,700 - DEBUG - Finished Request
+2024-05-04 23:02:08,700 - DEBUG - GET http://localhost:54956/session/3c600a504905df23835c6914318e2f9d/element/f.121F551E5E7AA22A386EDE3D729941D1.d.E43DF40EDAF6F28A30F611A26489AB5F.e.80/text {}
+2024-05-04 23:02:08,722 - DEBUG - http://localhost:54956 "GET /session/3c600a504905df23835c6914318e2f9d/element/f.121F551E5E7AA22A386EDE3D729941D1.d.E43DF40EDAF6F28A30F611A26489AB5F.e.80/text HTTP/1.1" 200 0
+2024-05-04 23:02:08,722 - DEBUG - Remote response: status=200 | data={"value":"CHELSEA TEE"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:08,722 - DEBUG - Finished Request
+2024-05-04 23:02:08,722 - DEBUG - GET http://localhost:54956/session/3c600a504905df23835c6914318e2f9d/element/f.121F551E5E7AA22A386EDE3D729941D1.d.E43DF40EDAF6F28A30F611A26489AB5F.e.81/text {}
+2024-05-04 23:02:08,741 - DEBUG - http://localhost:54956 "GET /session/3c600a504905df23835c6914318e2f9d/element/f.121F551E5E7AA22A386EDE3D729941D1.d.E43DF40EDAF6F28A30F611A26489AB5F.e.81/text HTTP/1.1" 200 0
+2024-05-04 23:02:08,741 - DEBUG - Remote response: status=200 | data={"value":"ELIZABETH KNIT TOP"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:08,741 - DEBUG - Finished Request
+2024-05-04 23:02:08,741 - DEBUG - POST http://localhost:54956/session/3c600a504905df23835c6914318e2f9d/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:02:09,292 - DEBUG - http://localhost:54956 "POST /session/3c600a504905df23835c6914318e2f9d/url HTTP/1.1" 200 0
+2024-05-04 23:02:09,292 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:09,292 - DEBUG - Finished Request
+2024-05-04 23:02:09,293 - DEBUG - POST http://localhost:54956/session/3c600a504905df23835c6914318e2f9d/element {'using': 'xpath', 'value': '//span[contains(text(), "account")]'}
+2024-05-04 23:02:09,318 - DEBUG - http://localhost:54956 "POST /session/3c600a504905df23835c6914318e2f9d/element HTTP/1.1" 404 0
+2024-05-04 23:02:09,319 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(), \"account\")]\"}\n  (Session info: chrome=124.0.6367.119)","stacktrace":"\tGetHandleVerifier [0x0039C113+48259]\n\t(No symbol) [0x0032CA41]\n\t(No symbol) [0x00220A17]\n\t(No symbol) [0x00260BED]\n\t(No symbol) [0x00260C9B]\n\t(No symbol) [0x0029BC12]\n\t(No symbol) [0x00280DE4]\n\t(No symbol) [0x00299B9C]\n\t(No symbol) [0x00280B36]\n\t(No symbol) [0x0025570D]\n\t(No symbol) [0x002562CD]\n\tGetHandleVerifier [0x00656533+2908323]\n\tGetHandleVerifier [0x00693B4B+3159739]\n\tGetHandleVerifier [0x0043505B+674763]\n\tGetHandleVerifier [0x0043B21C+699788]\n\t(No symbol) [0x00336244]\n\t(No symbol) [0x00332298]\n\t(No symbol) [0x0033242C]\n\t(No symbol) [0x00324BB0]\n\tBaseThreadInitThunk [0x75DE7BA9+25]\n\tRtlInitializeExceptionChain [0x7703BE3B+107]\n\tRtlClearBits [0x7703BDBF+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '945', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:09,319 - DEBUG - Finished Request
+2024-05-04 23:02:22,868 - INFO - ====== WebDriver manager ======
+2024-05-04 23:02:24,743 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:02:24,748 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:02:25,332 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:02:25,338 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:02:25,340 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:02:25,763 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:02:25,779 - INFO - Driver [C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-05-04 23:02:25,779 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-04 23:02:25,779 - DEBUG - Started executable: `C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe` in a child process with pid: 19596 using 0 to output -3
+2024-05-04 23:02:26,297 - DEBUG - POST http://localhost:54996/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-05-04 23:02:26,297 - DEBUG - Starting new HTTP connection (1): localhost:54996
+2024-05-04 23:02:27,156 - DEBUG - http://localhost:54996 "POST /session HTTP/1.1" 200 0
+2024-05-04 23:02:27,156 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"124.0.6367.119","chrome":{"chromedriverVersion":"124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})","userDataDir":"C:\\Users\\juanv\\AppData\\Local\\Temp\\scoped_dir19596_1525431289"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55000"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2be5afb7a33fe6328c0dda3d35cb6d19"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:27,156 - DEBUG - Finished Request
+2024-05-04 23:02:27,156 - DEBUG - POST http://localhost:54996/session/2be5afb7a33fe6328c0dda3d35cb6d19/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:02:32,187 - DEBUG - http://localhost:54996 "POST /session/2be5afb7a33fe6328c0dda3d35cb6d19/url HTTP/1.1" 200 0
+2024-05-04 23:02:32,187 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:32,187 - DEBUG - Finished Request
+2024-05-04 23:02:32,187 - DEBUG - POST http://localhost:54996/session/2be5afb7a33fe6328c0dda3d35cb6d19/elements {'using': 'xpath', 'value': '//h3[contains(@class, "product-name")]'}
+2024-05-04 23:02:32,212 - DEBUG - http://localhost:54996 "POST /session/2be5afb7a33fe6328c0dda3d35cb6d19/elements HTTP/1.1" 200 0
+2024-05-04 23:02:32,212 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.D29C5FF5DB387325094F82A27F35F6EE.d.F0E97C3812D6B9C2E17577EED15FDED2.e.80"},{"element-6066-11e4-a52e-4f735466cecf":"f.D29C5FF5DB387325094F82A27F35F6EE.d.F0E97C3812D6B9C2E17577EED15FDED2.e.81"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:32,212 - DEBUG - Finished Request
+2024-05-04 23:02:32,212 - DEBUG - GET http://localhost:54996/session/2be5afb7a33fe6328c0dda3d35cb6d19/element/f.D29C5FF5DB387325094F82A27F35F6EE.d.F0E97C3812D6B9C2E17577EED15FDED2.e.80/text {}
+2024-05-04 23:02:32,235 - DEBUG - http://localhost:54996 "GET /session/2be5afb7a33fe6328c0dda3d35cb6d19/element/f.D29C5FF5DB387325094F82A27F35F6EE.d.F0E97C3812D6B9C2E17577EED15FDED2.e.80/text HTTP/1.1" 200 0
+2024-05-04 23:02:32,235 - DEBUG - Remote response: status=200 | data={"value":"CHELSEA TEE"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:32,235 - DEBUG - Finished Request
+2024-05-04 23:02:32,235 - DEBUG - GET http://localhost:54996/session/2be5afb7a33fe6328c0dda3d35cb6d19/element/f.D29C5FF5DB387325094F82A27F35F6EE.d.F0E97C3812D6B9C2E17577EED15FDED2.e.81/text {}
+2024-05-04 23:02:32,253 - DEBUG - http://localhost:54996 "GET /session/2be5afb7a33fe6328c0dda3d35cb6d19/element/f.D29C5FF5DB387325094F82A27F35F6EE.d.F0E97C3812D6B9C2E17577EED15FDED2.e.81/text HTTP/1.1" 200 0
+2024-05-04 23:02:32,254 - DEBUG - Remote response: status=200 | data={"value":"ELIZABETH KNIT TOP"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:32,254 - DEBUG - Finished Request
+2024-05-04 23:02:32,254 - DEBUG - POST http://localhost:54996/session/2be5afb7a33fe6328c0dda3d35cb6d19/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:02:32,810 - DEBUG - http://localhost:54996 "POST /session/2be5afb7a33fe6328c0dda3d35cb6d19/url HTTP/1.1" 200 0
+2024-05-04 23:02:32,811 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:32,811 - DEBUG - Finished Request
+2024-05-04 23:02:32,811 - DEBUG - POST http://localhost:54996/session/2be5afb7a33fe6328c0dda3d35cb6d19/element {'using': 'xpath', 'value': '//span[contains(text(), "account")]'}
+2024-05-04 23:02:32,837 - DEBUG - http://localhost:54996 "POST /session/2be5afb7a33fe6328c0dda3d35cb6d19/element HTTP/1.1" 404 0
+2024-05-04 23:02:32,837 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(), \"account\")]\"}\n  (Session info: chrome=124.0.6367.119)","stacktrace":"\tGetHandleVerifier [0x0039C113+48259]\n\t(No symbol) [0x0032CA41]\n\t(No symbol) [0x00220A17]\n\t(No symbol) [0x00260BED]\n\t(No symbol) [0x00260C9B]\n\t(No symbol) [0x0029BC12]\n\t(No symbol) [0x00280DE4]\n\t(No symbol) [0x00299B9C]\n\t(No symbol) [0x00280B36]\n\t(No symbol) [0x0025570D]\n\t(No symbol) [0x002562CD]\n\tGetHandleVerifier [0x00656533+2908323]\n\tGetHandleVerifier [0x00693B4B+3159739]\n\tGetHandleVerifier [0x0043505B+674763]\n\tGetHandleVerifier [0x0043B21C+699788]\n\t(No symbol) [0x00336244]\n\t(No symbol) [0x00332298]\n\t(No symbol) [0x0033242C]\n\t(No symbol) [0x00324BB0]\n\tBaseThreadInitThunk [0x75DE7BA9+25]\n\tRtlInitializeExceptionChain [0x7703BE3B+107]\n\tRtlClearBits [0x7703BDBF+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '945', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:32,837 - DEBUG - Finished Request
+2024-05-04 23:02:32,838 - CRITICAL - Se produjo un error durante la ejecucion
+2024-05-04 23:02:48,356 - INFO - ====== WebDriver manager ======
+2024-05-04 23:02:49,813 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:02:49,817 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:02:50,214 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:02:50,214 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:02:50,214 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:02:50,649 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:02:50,657 - INFO - Driver [C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-05-04 23:02:50,658 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-04 23:02:50,668 - DEBUG - Started executable: `C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe` in a child process with pid: 19440 using 0 to output -3
+2024-05-04 23:02:51,181 - DEBUG - POST http://localhost:55037/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-05-04 23:02:51,182 - DEBUG - Starting new HTTP connection (1): localhost:55037
+2024-05-04 23:02:52,040 - DEBUG - http://localhost:55037 "POST /session HTTP/1.1" 200 0
+2024-05-04 23:02:52,040 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"124.0.6367.119","chrome":{"chromedriverVersion":"124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})","userDataDir":"C:\\Users\\juanv\\AppData\\Local\\Temp\\scoped_dir19440_1085820017"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55041"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bbe7f4860aba0714181e50b8aabd946c"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:52,041 - DEBUG - Finished Request
+2024-05-04 23:02:52,041 - DEBUG - POST http://localhost:55037/session/bbe7f4860aba0714181e50b8aabd946c/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:02:57,077 - DEBUG - http://localhost:55037 "POST /session/bbe7f4860aba0714181e50b8aabd946c/url HTTP/1.1" 200 0
+2024-05-04 23:02:57,077 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:57,077 - DEBUG - Finished Request
+2024-05-04 23:02:57,077 - DEBUG - POST http://localhost:55037/session/bbe7f4860aba0714181e50b8aabd946c/elements {'using': 'xpath', 'value': '//h3[contains(@class, "product-name")]'}
+2024-05-04 23:02:57,100 - DEBUG - http://localhost:55037 "POST /session/bbe7f4860aba0714181e50b8aabd946c/elements HTTP/1.1" 200 0
+2024-05-04 23:02:57,100 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.16874EC27E13F6B238B945178A9E4DB0.d.585222F5FAA1F799D8422E436E6382AC.e.70"},{"element-6066-11e4-a52e-4f735466cecf":"f.16874EC27E13F6B238B945178A9E4DB0.d.585222F5FAA1F799D8422E436E6382AC.e.71"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:57,100 - DEBUG - Finished Request
+2024-05-04 23:02:57,100 - DEBUG - GET http://localhost:55037/session/bbe7f4860aba0714181e50b8aabd946c/element/f.16874EC27E13F6B238B945178A9E4DB0.d.585222F5FAA1F799D8422E436E6382AC.e.70/text {}
+2024-05-04 23:02:57,120 - DEBUG - http://localhost:55037 "GET /session/bbe7f4860aba0714181e50b8aabd946c/element/f.16874EC27E13F6B238B945178A9E4DB0.d.585222F5FAA1F799D8422E436E6382AC.e.70/text HTTP/1.1" 200 0
+2024-05-04 23:02:57,120 - DEBUG - Remote response: status=200 | data={"value":"CHELSEA TEE"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:57,120 - DEBUG - Finished Request
+2024-05-04 23:02:57,121 - DEBUG - GET http://localhost:55037/session/bbe7f4860aba0714181e50b8aabd946c/element/f.16874EC27E13F6B238B945178A9E4DB0.d.585222F5FAA1F799D8422E436E6382AC.e.71/text {}
+2024-05-04 23:02:57,135 - DEBUG - http://localhost:55037 "GET /session/bbe7f4860aba0714181e50b8aabd946c/element/f.16874EC27E13F6B238B945178A9E4DB0.d.585222F5FAA1F799D8422E436E6382AC.e.71/text HTTP/1.1" 200 0
+2024-05-04 23:02:57,135 - DEBUG - Remote response: status=200 | data={"value":"ELIZABETH KNIT TOP"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:57,135 - DEBUG - Finished Request
+2024-05-04 23:02:57,135 - DEBUG - POST http://localhost:55037/session/bbe7f4860aba0714181e50b8aabd946c/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:02:57,683 - DEBUG - http://localhost:55037 "POST /session/bbe7f4860aba0714181e50b8aabd946c/url HTTP/1.1" 200 0
+2024-05-04 23:02:57,683 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:57,684 - DEBUG - Finished Request
+2024-05-04 23:02:57,684 - DEBUG - POST http://localhost:55037/session/bbe7f4860aba0714181e50b8aabd946c/element {'using': 'xpath', 'value': '//span[contains(text(), "account")]'}
+2024-05-04 23:02:57,706 - DEBUG - http://localhost:55037 "POST /session/bbe7f4860aba0714181e50b8aabd946c/element HTTP/1.1" 404 0
+2024-05-04 23:02:57,706 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(), \"account\")]\"}\n  (Session info: chrome=124.0.6367.119)","stacktrace":"\tGetHandleVerifier [0x0039C113+48259]\n\t(No symbol) [0x0032CA41]\n\t(No symbol) [0x00220A17]\n\t(No symbol) [0x00260BED]\n\t(No symbol) [0x00260C9B]\n\t(No symbol) [0x0029BC12]\n\t(No symbol) [0x00280DE4]\n\t(No symbol) [0x00299B9C]\n\t(No symbol) [0x00280B36]\n\t(No symbol) [0x0025570D]\n\t(No symbol) [0x002562CD]\n\tGetHandleVerifier [0x00656533+2908323]\n\tGetHandleVerifier [0x00693B4B+3159739]\n\tGetHandleVerifier [0x0043505B+674763]\n\tGetHandleVerifier [0x0043B21C+699788]\n\t(No symbol) [0x00336244]\n\t(No symbol) [0x00332298]\n\t(No symbol) [0x0033242C]\n\t(No symbol) [0x00324BB0]\n\tBaseThreadInitThunk [0x75DE7BA9+25]\n\tRtlInitializeExceptionChain [0x7703BE3B+107]\n\tRtlClearBits [0x7703BDBF+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '945', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:02:57,706 - DEBUG - Finished Request
+2024-05-04 23:02:57,707 - CRITICAL - Se produjo un error durante la ejecucion
+2024-05-04 23:22:56,836 - INFO - ====== WebDriver manager ======
+2024-05-04 23:22:59,032 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:22:59,040 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:23:00,077 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:23:00,084 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:23:00,087 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:23:00,852 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:23:00,864 - INFO - Driver [C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-05-04 23:23:00,866 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-04 23:23:00,881 - DEBUG - Started executable: `C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe` in a child process with pid: 15608 using 0 to output -3
+2024-05-04 23:23:01,386 - DEBUG - POST http://localhost:55720/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-05-04 23:23:01,387 - DEBUG - Starting new HTTP connection (1): localhost:55720
+2024-05-04 23:23:02,494 - DEBUG - http://localhost:55720 "POST /session HTTP/1.1" 200 0
+2024-05-04 23:23:02,494 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"124.0.6367.119","chrome":{"chromedriverVersion":"124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})","userDataDir":"C:\\Users\\juanv\\AppData\\Local\\Temp\\scoped_dir15608_1549843445"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55723"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"55def7c36d173314ffc34007fb3ccad9"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:02,494 - DEBUG - Finished Request
+2024-05-04 23:23:02,495 - DEBUG - POST http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:23:04,176 - DEBUG - http://localhost:55720 "POST /session/55def7c36d173314ffc34007fb3ccad9/url HTTP/1.1" 200 0
+2024-05-04 23:23:04,177 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:04,177 - DEBUG - Finished Request
+2024-05-04 23:23:04,177 - DEBUG - POST http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/elements {'using': 'xpath', 'value': '//h3[contains(@class, "product-name")]'}
+2024-05-04 23:23:09,031 - DEBUG - http://localhost:55720 "POST /session/55def7c36d173314ffc34007fb3ccad9/elements HTTP/1.1" 200 0
+2024-05-04 23:23:09,031 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.34B7B900029DFB427AAB5B9A8EDAF025.d.0ECB0708CA0F4D888675BD75AAF39EB2.e.71"},{"element-6066-11e4-a52e-4f735466cecf":"f.34B7B900029DFB427AAB5B9A8EDAF025.d.0ECB0708CA0F4D888675BD75AAF39EB2.e.72"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:09,031 - DEBUG - Finished Request
+2024-05-04 23:23:09,032 - DEBUG - GET http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/element/f.34B7B900029DFB427AAB5B9A8EDAF025.d.0ECB0708CA0F4D888675BD75AAF39EB2.e.71/text {}
+2024-05-04 23:23:09,059 - DEBUG - http://localhost:55720 "GET /session/55def7c36d173314ffc34007fb3ccad9/element/f.34B7B900029DFB427AAB5B9A8EDAF025.d.0ECB0708CA0F4D888675BD75AAF39EB2.e.71/text HTTP/1.1" 200 0
+2024-05-04 23:23:09,059 - DEBUG - Remote response: status=200 | data={"value":"CHELSEA TEE"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:09,059 - DEBUG - Finished Request
+2024-05-04 23:23:09,060 - DEBUG - GET http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/element/f.34B7B900029DFB427AAB5B9A8EDAF025.d.0ECB0708CA0F4D888675BD75AAF39EB2.e.72/text {}
+2024-05-04 23:23:09,077 - DEBUG - http://localhost:55720 "GET /session/55def7c36d173314ffc34007fb3ccad9/element/f.34B7B900029DFB427AAB5B9A8EDAF025.d.0ECB0708CA0F4D888675BD75AAF39EB2.e.72/text HTTP/1.1" 200 0
+2024-05-04 23:23:09,077 - DEBUG - Remote response: status=200 | data={"value":"ELIZABETH KNIT TOP"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:09,077 - DEBUG - Finished Request
+2024-05-04 23:23:09,078 - DEBUG - POST http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:23:09,807 - DEBUG - http://localhost:55720 "POST /session/55def7c36d173314ffc34007fb3ccad9/url HTTP/1.1" 200 0
+2024-05-04 23:23:09,808 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:09,808 - DEBUG - Finished Request
+2024-05-04 23:23:09,808 - DEBUG - POST http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/element {'using': 'xpath', 'value': '//span[contains(text(), "Account")]'}
+2024-05-04 23:23:09,837 - DEBUG - http://localhost:55720 "POST /session/55def7c36d173314ffc34007fb3ccad9/element HTTP/1.1" 200 0
+2024-05-04 23:23:09,837 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.34B7B900029DFB427AAB5B9A8EDAF025.d.5D816D008978D57A6F1FF2A891524366.e.116"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:09,837 - DEBUG - Finished Request
+2024-05-04 23:23:09,838 - DEBUG - POST http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9/element/f.34B7B900029DFB427AAB5B9A8EDAF025.d.5D816D008978D57A6F1FF2A891524366.e.116/click {}
+2024-05-04 23:23:10,026 - DEBUG - http://localhost:55720 "POST /session/55def7c36d173314ffc34007fb3ccad9/element/f.34B7B900029DFB427AAB5B9A8EDAF025.d.5D816D008978D57A6F1FF2A891524366.e.116/click HTTP/1.1" 200 0
+2024-05-04 23:23:10,026 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:10,026 - DEBUG - Finished Request
+2024-05-04 23:23:13,038 - DEBUG - DELETE http://localhost:55720/session/55def7c36d173314ffc34007fb3ccad9 {}
+2024-05-04 23:23:13,346 - DEBUG - http://localhost:55720 "DELETE /session/55def7c36d173314ffc34007fb3ccad9 HTTP/1.1" 200 0
+2024-05-04 23:23:13,346 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:13,347 - DEBUG - Finished Request
+2024-05-04 23:23:29,272 - INFO - ====== WebDriver manager ======
+2024-05-04 23:23:31,263 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:23:31,270 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:23:31,820 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:23:31,829 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:23:31,832 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:23:32,390 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:23:32,400 - INFO - Driver [C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-05-04 23:23:32,402 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-04 23:23:32,414 - DEBUG - Started executable: `C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe` in a child process with pid: 20472 using 0 to output -3
+2024-05-04 23:23:32,929 - DEBUG - POST http://localhost:55775/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-05-04 23:23:32,930 - DEBUG - Starting new HTTP connection (1): localhost:55775
+2024-05-04 23:23:34,110 - DEBUG - http://localhost:55775 "POST /session HTTP/1.1" 200 0
+2024-05-04 23:23:34,110 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"124.0.6367.119","chrome":{"chromedriverVersion":"124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})","userDataDir":"C:\\Users\\juanv\\AppData\\Local\\Temp\\scoped_dir20472_1283735080"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55779"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ddf33bc37b5fb0934d0d06981ba76f38"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:34,110 - DEBUG - Finished Request
+2024-05-04 23:23:34,111 - DEBUG - POST http://localhost:55775/session/ddf33bc37b5fb0934d0d06981ba76f38/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:23:39,583 - DEBUG - http://localhost:55775 "POST /session/ddf33bc37b5fb0934d0d06981ba76f38/url HTTP/1.1" 200 0
+2024-05-04 23:23:39,583 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:39,584 - DEBUG - Finished Request
+2024-05-04 23:23:39,585 - DEBUG - POST http://localhost:55775/session/ddf33bc37b5fb0934d0d06981ba76f38/elements {'using': 'xpath', 'value': '//h3[contains(@class, "product-name")]'}
+2024-05-04 23:23:39,630 - DEBUG - http://localhost:55775 "POST /session/ddf33bc37b5fb0934d0d06981ba76f38/elements HTTP/1.1" 200 0
+2024-05-04 23:23:39,632 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.F8CAB6F7D4D7E11E1CA91D8F9F6EDC45.d.8FF3EB6E93413DF81C2259F734263235.e.73"},{"element-6066-11e4-a52e-4f735466cecf":"f.F8CAB6F7D4D7E11E1CA91D8F9F6EDC45.d.8FF3EB6E93413DF81C2259F734263235.e.74"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:39,632 - DEBUG - Finished Request
+2024-05-04 23:23:39,632 - DEBUG - GET http://localhost:55775/session/ddf33bc37b5fb0934d0d06981ba76f38/element/f.F8CAB6F7D4D7E11E1CA91D8F9F6EDC45.d.8FF3EB6E93413DF81C2259F734263235.e.73/text {}
+2024-05-04 23:23:39,671 - DEBUG - http://localhost:55775 "GET /session/ddf33bc37b5fb0934d0d06981ba76f38/element/f.F8CAB6F7D4D7E11E1CA91D8F9F6EDC45.d.8FF3EB6E93413DF81C2259F734263235.e.73/text HTTP/1.1" 200 0
+2024-05-04 23:23:39,671 - DEBUG - Remote response: status=200 | data={"value":"CHELSEA TEE"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:39,671 - DEBUG - Finished Request
+2024-05-04 23:23:39,671 - DEBUG - GET http://localhost:55775/session/ddf33bc37b5fb0934d0d06981ba76f38/element/f.F8CAB6F7D4D7E11E1CA91D8F9F6EDC45.d.8FF3EB6E93413DF81C2259F734263235.e.74/text {}
+2024-05-04 23:23:39,696 - DEBUG - http://localhost:55775 "GET /session/ddf33bc37b5fb0934d0d06981ba76f38/element/f.F8CAB6F7D4D7E11E1CA91D8F9F6EDC45.d.8FF3EB6E93413DF81C2259F734263235.e.74/text HTTP/1.1" 200 0
+2024-05-04 23:23:39,697 - DEBUG - Remote response: status=200 | data={"value":"ELIZABETH KNIT TOP"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:39,697 - DEBUG - Finished Request
+2024-05-04 23:23:39,697 - DEBUG - POST http://localhost:55775/session/ddf33bc37b5fb0934d0d06981ba76f38/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:23:41,137 - DEBUG - http://localhost:55775 "POST /session/ddf33bc37b5fb0934d0d06981ba76f38/url HTTP/1.1" 200 0
+2024-05-04 23:23:41,138 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:41,138 - DEBUG - Finished Request
+2024-05-04 23:23:41,138 - DEBUG - POST http://localhost:55775/session/ddf33bc37b5fb0934d0d06981ba76f38/element {'using': 'xpath', 'value': '//span[contains(text(), "account")]'}
+2024-05-04 23:23:41,278 - DEBUG - http://localhost:55775 "POST /session/ddf33bc37b5fb0934d0d06981ba76f38/element HTTP/1.1" 404 0
+2024-05-04 23:23:41,278 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(), \"account\")]\"}\n  (Session info: chrome=124.0.6367.119)","stacktrace":"\tGetHandleVerifier [0x0039C113+48259]\n\t(No symbol) [0x0032CA41]\n\t(No symbol) [0x00220A17]\n\t(No symbol) [0x00260BED]\n\t(No symbol) [0x00260C9B]\n\t(No symbol) [0x0029BC12]\n\t(No symbol) [0x00280DE4]\n\t(No symbol) [0x00299B9C]\n\t(No symbol) [0x00280B36]\n\t(No symbol) [0x0025570D]\n\t(No symbol) [0x002562CD]\n\tGetHandleVerifier [0x00656533+2908323]\n\tGetHandleVerifier [0x00693B4B+3159739]\n\tGetHandleVerifier [0x0043505B+674763]\n\tGetHandleVerifier [0x0043B21C+699788]\n\t(No symbol) [0x00336244]\n\t(No symbol) [0x00332298]\n\t(No symbol) [0x0033242C]\n\t(No symbol) [0x00324BB0]\n\tBaseThreadInitThunk [0x75DE7BA9+25]\n\tRtlInitializeExceptionChain [0x7703BE3B+107]\n\tRtlClearBits [0x7703BDBF+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '945', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:23:41,279 - DEBUG - Finished Request
+2024-05-04 23:24:36,855 - INFO - ====== WebDriver manager ======
+2024-05-04 23:24:39,089 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:24:39,097 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:24:40,091 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:24:40,099 - INFO - Get LATEST chromedriver version for google-chrome
+2024-05-04 23:24:40,102 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-05-04 23:24:40,682 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 5289
+2024-05-04 23:24:40,696 - INFO - Driver [C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-05-04 23:24:40,697 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-04 23:24:40,715 - DEBUG - Started executable: `C:\Users\juanv\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe` in a child process with pid: 18676 using 0 to output -3
+2024-05-04 23:24:41,234 - DEBUG - POST http://localhost:55844/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-05-04 23:24:41,235 - DEBUG - Starting new HTTP connection (1): localhost:55844
+2024-05-04 23:24:42,382 - DEBUG - http://localhost:55844 "POST /session HTTP/1.1" 200 0
+2024-05-04 23:24:42,382 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"124.0.6367.119","chrome":{"chromedriverVersion":"124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})","userDataDir":"C:\\Users\\juanv\\AppData\\Local\\Temp\\scoped_dir18676_2022707131"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:55848"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2963f71fdc7ff62002d57567a9b5b3fc"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:42,383 - DEBUG - Finished Request
+2024-05-04 23:24:42,384 - DEBUG - POST http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:24:47,645 - DEBUG - http://localhost:55844 "POST /session/2963f71fdc7ff62002d57567a9b5b3fc/url HTTP/1.1" 200 0
+2024-05-04 23:24:47,645 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:47,646 - DEBUG - Finished Request
+2024-05-04 23:24:47,646 - DEBUG - POST http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc/elements {'using': 'xpath', 'value': '//h3[contains(@class, "product-name")]'}
+2024-05-04 23:24:47,690 - DEBUG - http://localhost:55844 "POST /session/2963f71fdc7ff62002d57567a9b5b3fc/elements HTTP/1.1" 200 0
+2024-05-04 23:24:47,690 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.36618DD5FA82ABE515AD1FEC93AC0318.d.E019406DC4EA2FD5722EBBAEF911E5F2.e.73"},{"element-6066-11e4-a52e-4f735466cecf":"f.36618DD5FA82ABE515AD1FEC93AC0318.d.E019406DC4EA2FD5722EBBAEF911E5F2.e.74"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:47,690 - DEBUG - Finished Request
+2024-05-04 23:24:47,691 - DEBUG - GET http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc/element/f.36618DD5FA82ABE515AD1FEC93AC0318.d.E019406DC4EA2FD5722EBBAEF911E5F2.e.73/text {}
+2024-05-04 23:24:47,730 - DEBUG - http://localhost:55844 "GET /session/2963f71fdc7ff62002d57567a9b5b3fc/element/f.36618DD5FA82ABE515AD1FEC93AC0318.d.E019406DC4EA2FD5722EBBAEF911E5F2.e.73/text HTTP/1.1" 200 0
+2024-05-04 23:24:47,731 - DEBUG - Remote response: status=200 | data={"value":"CHELSEA TEE"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:47,731 - DEBUG - Finished Request
+2024-05-04 23:24:47,731 - DEBUG - GET http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc/element/f.36618DD5FA82ABE515AD1FEC93AC0318.d.E019406DC4EA2FD5722EBBAEF911E5F2.e.74/text {}
+2024-05-04 23:24:47,757 - DEBUG - http://localhost:55844 "GET /session/2963f71fdc7ff62002d57567a9b5b3fc/element/f.36618DD5FA82ABE515AD1FEC93AC0318.d.E019406DC4EA2FD5722EBBAEF911E5F2.e.74/text HTTP/1.1" 200 0
+2024-05-04 23:24:47,757 - DEBUG - Remote response: status=200 | data={"value":"ELIZABETH KNIT TOP"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:47,757 - DEBUG - Finished Request
+2024-05-04 23:24:47,757 - DEBUG - POST http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc/url {'url': 'http://demo-store.seleniumacademy.com/'}
+2024-05-04 23:24:48,382 - DEBUG - http://localhost:55844 "POST /session/2963f71fdc7ff62002d57567a9b5b3fc/url HTTP/1.1" 200 0
+2024-05-04 23:24:48,382 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:48,382 - DEBUG - Finished Request
+2024-05-04 23:24:48,383 - DEBUG - POST http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc/element {'using': 'xpath', 'value': '//span[contains(text(), "account")]'}
+2024-05-04 23:24:48,416 - DEBUG - http://localhost:55844 "POST /session/2963f71fdc7ff62002d57567a9b5b3fc/element HTTP/1.1" 404 0
+2024-05-04 23:24:48,416 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(), \"account\")]\"}\n  (Session info: chrome=124.0.6367.119)","stacktrace":"\tGetHandleVerifier [0x0039C113+48259]\n\t(No symbol) [0x0032CA41]\n\t(No symbol) [0x00220A17]\n\t(No symbol) [0x00260BED]\n\t(No symbol) [0x00260C9B]\n\t(No symbol) [0x0029BC12]\n\t(No symbol) [0x00280DE4]\n\t(No symbol) [0x00299B9C]\n\t(No symbol) [0x00280B36]\n\t(No symbol) [0x0025570D]\n\t(No symbol) [0x002562CD]\n\tGetHandleVerifier [0x00656533+2908323]\n\tGetHandleVerifier [0x00693B4B+3159739]\n\tGetHandleVerifier [0x0043505B+674763]\n\tGetHandleVerifier [0x0043B21C+699788]\n\t(No symbol) [0x00336244]\n\t(No symbol) [0x00332298]\n\t(No symbol) [0x0033242C]\n\t(No symbol) [0x00324BB0]\n\tBaseThreadInitThunk [0x75DE7BA9+25]\n\tRtlInitializeExceptionChain [0x7703BE3B+107]\n\tRtlClearBits [0x7703BDBF+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '945', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:48,416 - DEBUG - Finished Request
+2024-05-04 23:24:48,417 - CRITICAL - ¡Error critico! la aplicacion puede fallar
+2024-05-04 23:24:51,417 - DEBUG - DELETE http://localhost:55844/session/2963f71fdc7ff62002d57567a9b5b3fc {}
+2024-05-04 23:24:51,552 - DEBUG - http://localhost:55844 "DELETE /session/2963f71fdc7ff62002d57567a9b5b3fc HTTP/1.1" 200 0
+2024-05-04 23:24:51,552 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-05-04 23:24:51,552 - DEBUG - Finished Request
