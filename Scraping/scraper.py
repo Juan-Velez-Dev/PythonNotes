@@ -4,13 +4,14 @@ Proceso para scrapear una web y resgistrarme con diferentes usuarios
 
 from time import sleep
 
+import asyncio
 import logging
-
+# from selenium.webdriver.remote.webdriver import WebDrive
 from initialize_driver import initialize_driver
 from scrapers.scrape_to_register.scrape_register import scrape_to_register
 
 
-def main():
+async def main():
     """
     separe todo el codigo en diferentes funciones
     con una estructura de carpetas facil de entender
@@ -22,8 +23,8 @@ def main():
     permitiendo al codigo ser manejable para cualquier persona e implementar mejoras con mucha mas facilidad
     """
     try:
-        driver = initialize_driver()
-        scrape_to_register(driver)
+        driver = await initialize_driver()
+        await scrape_to_register(driver)
         sleep(3)
         driver.quit()
     except Exception as e:
@@ -32,7 +33,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
 
 
 ############################ FUNCIONES DE TESTEO ############################

@@ -8,11 +8,12 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 
 opts = Options()
-# opts.add_argument("--headless")
-logging.basicConfig(level=logging.DEBUG)
+opts.add_argument("--headless")
+logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.DEBUG)
 
 
-def initialize_driver():
+async def initialize_driver():
     """
     configuracion e inicializacion del driver
     """
